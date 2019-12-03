@@ -42,7 +42,7 @@ defmodule Aoc.Year2019.Day01.TheTyrannyoftheRocketEquation do
   def part_1(input) do
     input
     |> String.split("\n", trim: true)
-    |> Enum.map(fn x -> round(Integer.parse(x)/3) - 2 end)
+    |> Enum.map(fn x -> Integer.floor_div(String.to_integer(x), 3) - 2 end)
     |> Enum.sum
   end
 
