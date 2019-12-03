@@ -16,6 +16,7 @@ defmodule Aoc.DayGeneratorTest do
     end
   end
 
+  @tag :skip
   describe "find_and_append_moduledocs/2" do
     test "appends the string to the moduledocs" do
       result = DayGenerator.find_and_append_moduledocs(simple_docs(), "\n  ## Test")
