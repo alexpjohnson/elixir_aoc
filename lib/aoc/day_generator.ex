@@ -205,7 +205,7 @@ defmodule Aoc.DayGenerator do
 
   defp get_input(day, year) do
     session_cookie = Application.get_env(:aoc, :key)
-
+    Mix.shell().info("Got session #{session_cookie}")
     "https://adventofcode.com/#{year}/day/#{day}/input"
     |> HTTPoison.get!(%{}, hackney: [cookie: ["session=#{session_cookie}"]])
   end

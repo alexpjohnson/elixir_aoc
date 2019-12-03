@@ -2,7 +2,7 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :aoc, key: System.get_env("SESSION_KEY")
+config :aoc, key: System.get_env("AOC_SESSION_KEY")
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
